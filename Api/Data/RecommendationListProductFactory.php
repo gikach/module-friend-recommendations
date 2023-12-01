@@ -2,7 +2,7 @@
 
 namespace SwiftOtter\FriendRecommendations\Api\Data;
 
-class RecommendationListInterfaceFactory
+class RecommendationListProductFactory
 {
     /**
      * Object Manager instance
@@ -24,7 +24,7 @@ class RecommendationListInterfaceFactory
      * @param \Magento\Framework\ObjectManagerInterface $objectManager
      * @param string $instanceName
      */
-    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\SwiftOtter\\FriendRecommendations\\Api\\Data\\RecommendationListInterface')
+    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\SwiftOtter\\FriendRecommendations\\Api\\Data\\RecommendationListProductInterface')
     {
         $this->_objectManager = $objectManager;
         $this->_instanceName = $instanceName;
@@ -34,7 +34,7 @@ class RecommendationListInterfaceFactory
      * Create class instance with specified parameters
      *
      * @param array $data
-     * @return \SwiftOtter\FriendRecommendations\Api\Data\RecommendationListInterface
+     * @return RecommendationListProductInterface
      */
     public function create(array $data = [])
     {
